@@ -14,10 +14,17 @@ function setup(){
     ground = new Ground(600,height,1200,20);
     platform = new Ground(150, 305, 300, 170);
     platform1 = new Ground(800,200,200,10);
+    var arr = []
 
-    box1 = new Box(800,220,40,40,"blue");
-    /*box2 = new Box(920,320,70,70);
     
+    for (var i = 710; i <= 890; i++) {
+        
+        box1 = new Box(i+40,150,20,20);
+        
+            }
+    arr.push(box1);
+    box2 = new Box(800,200,20,20,255);
+    /*
     log1 = new Log(810,260,300, PI/2);
 
     box3 = new Box(700,240,70,70);
@@ -39,6 +46,7 @@ function draw(){
     Engine.update(engine);
     strokeWeight(4);
     box1.display();
+    box2.display();
     //box2.display();
     ground.display();
     /*

@@ -7,5 +7,6 @@ class Ball extends BaseClass {
   display() {
     
     super.display();
+    
   }
 }
